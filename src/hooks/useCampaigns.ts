@@ -50,7 +50,8 @@ export const useCampaigns = () => {
           name: campaign.name,
           cost: campaign.cost,
           revenue: campaign.revenue,
-          roi: campaign.roi
+          roi: campaign.roi,
+          timestamp: new Date().toISOString()
         }])
         .select();
 
